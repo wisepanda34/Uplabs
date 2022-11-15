@@ -1,0 +1,655 @@
+@media (max-width:1200px) {
+   .client {
+      &_wrapper {
+         flex-wrap: wrap;
+         justify-content: center;
+         margin: 0 auto;
+      }
+   }
+
+   .leading {
+      &_picture {
+         display: flex;
+         align-items: center;
+
+         img {
+            width: 400px;
+         }
+      }
+   }
+
+   .case {
+      &_picture {
+         transform: translateY(15%);
+      }
+
+      &_items {
+         justify-content: center;
+      }
+   }
+
+   .transform {
+      &_wrapper {
+         flex-direction: column;
+      }
+
+      &_visual {
+         display: flex;
+         flex-direction: column;
+         order: 2;
+      }
+
+      &_big {
+         width: 548px;
+         margin: 0px auto;
+         transform: translate(0%, 80px);
+      }
+
+      &_little {
+         margin: 0 auto;
+         transform: translate(-100%, -40%);
+      }
+
+      &_content {
+         order: 1;
+      }
+
+      &_block {
+         position: static;
+         order: 3;
+         width: 100%;
+         max-width: 676px;
+         margin-bottom: 20px;
+      }
+
+      #ellipse_transform_1,
+      #ellipse_transform_2,
+      #ellipse_transform_3 {
+         display: none;
+      }
+   }
+
+   .footer {
+      &_up {
+         flex-direction: column-reverse;
+      }
+
+      &_block {
+         padding-bottom: 10px;
+      }
+
+      &_better {
+         max-width: 400px;
+         margin: 0 auto;
+         padding-top: 0px;
+         padding-bottom: 35px;
+      }
+
+      &_title {
+         text-align: center;
+      }
+
+      &_social {
+         justify-content: center;
+      }
+   }
+
+}
+
+@media (max-width:991.98px) {
+   .header {
+      &_wrapper {
+         position: relative;
+
+
+         .hamburger {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 21px;
+
+
+
+            span {
+               display: block;
+               height: 2px;
+               width: 100%;
+               background-color: rgb(0, 0, 0);
+               margin: 5px 0;
+               transition: 0.5s all;
+
+            }
+
+            &_active {
+               span {
+                  margin-bottom: -7px;
+
+                  &:nth-child(1) {
+                     transform: translateY(4px) rotate(-45deg);
+                  }
+
+                  &:nth-child(2) {
+                     display: none;
+                  }
+
+                  &:nth-child(3) {
+                     transform: translateY(4px) rotate(45deg);
+                  }
+               }
+            }
+         }
+      }
+
+      &_menu {
+         position: fixed;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+         left: -55%;
+         width: 50%;
+         height: 100vh;
+         padding: 30px 10px;
+         background-color: rgba(0, 0, 0, 0.8);
+         transition: 0.6s all;
+         z-index: 50;
+      }
+
+      &_active {
+         left: -5%;
+      }
+
+      &_list {
+         display: flex;
+         flex-direction: column;
+         margin-left: 40%;
+      }
+
+      &_link {
+         color: #ffffff;
+         font-size: 20px;
+      }
+
+      &_act {
+         margin-right: 15%;
+      }
+
+   }
+
+   .legal {
+      &_wrapper {
+         flex-direction: column;
+      }
+
+      &_content {
+         max-width: 70%;
+         padding: 40px 10px 40px 10px;
+
+      }
+
+      &_title {
+         font-size: 50px;
+
+         span::after {
+            content: '';
+            display: none;
+         }
+      }
+
+      &_consultation {
+         flex-direction: column-reverse;
+      }
+
+      &_visual {
+         padding-left: 20%;
+      }
+
+
+   }
+
+   .leading {
+      &_wrapper {
+         flex-direction: column;
+         gap: 40px;
+         padding: 60px 0px 100px 0px;
+      }
+
+      &_picture {
+
+         img {
+            width: 100%;
+            margin: 0px auto;
+         }
+      }
+
+      &_content {
+         margin: 0px 50px;
+      }
+   }
+
+   .case {
+      &_wrapper {
+         flex-direction: column;
+      }
+
+      &_bg {
+         width: 110%;
+         right: -5%;
+      }
+
+      &_content,
+      &_visual {
+         margin: 0 auto;
+      }
+
+      &_picture {
+         transform: translateY(0);
+      }
+   }
+
+   .meet {
+      &_header {
+         flex-direction: column;
+      }
+
+      &_controls {
+         display: flex;
+         justify-content: space-around;
+         padding-top: 0px;
+      }
+   }
+
+   .appointment {
+      &_wrapper {
+         flex-direction: column-reverse;
+         padding: 40px 50px 50px 50px;
+      }
+
+      &_latin {
+         padding-left: 0;
+      }
+   }
+
+   .footer {
+      &_up {
+         flex-direction: row;
+      }
+
+      &_better {
+         flex: 0 1 50%;
+         padding: 90px 0px 0px 0px;
+      }
+
+      &_block {
+         flex: 0 1 50%;
+         justify-content: center;
+      }
+
+      &_product,
+
+      &_company,
+
+      &_support {
+         display: none;
+      }
+
+
+   }
+}
+
+@media (max-width:766.98px) {
+   .legal {
+      &_visual {
+         padding-left: 12%;
+      }
+
+      &_content {
+         max-width: 80%;
+      }
+   }
+
+   .transform {
+      &_form {
+         button {
+            transform: translate(-5px, 3px);
+         }
+      }
+
+      &_subtitle {
+         margin-top: 40px;
+      }
+
+      &_big {
+         max-width: 100%;
+         margin: 30px auto;
+         transform: unset;
+      }
+
+      &_little {
+         display: none;
+      }
+   }
+
+   .leading {
+      &_decor {
+         display: none;
+      }
+   }
+
+   .case {
+      &_visual {}
+
+      &_picture {
+         img {
+            max-width: 100%;
+         }
+      }
+
+      &_shadow {
+         display: none;
+      }
+
+   }
+
+   .footer {
+      &_block {
+         display: none;
+      }
+
+      &_up {
+         display: block;
+      }
+
+      &_better {
+         max-width: 500px;
+         padding: 50px 0px;
+         margin: 0 auto;
+      }
+
+      &_down {
+         flex-direction: column-reverse;
+         align-items: center;
+         gap: 20px;
+      }
+   }
+}
+
+//title 40px
+@media (max-width:575.98px) {
+   .header {
+      &_menu {
+         left: -110%;
+         width: 100%;
+      }
+
+      &_list {
+
+         margin-left: 30%;
+      }
+
+      &_active {
+         left: 0%;
+      }
+   }
+
+   .legal {
+      min-height: 500px;
+
+      &_content {
+         max-width: 90%;
+      }
+
+      &_title {
+         font-size: 40px;
+      }
+
+      &_consultation {
+         flex-direction: column-reverse;
+         gap: 30px;
+      }
+
+      &_visual {
+         display: none;
+      }
+   }
+
+   .leading {
+      &_wrapper {
+         flex-direction: column;
+         gap: 40px;
+         padding: 60px 0px 100px 0px;
+      }
+
+      &_content {
+         margin: 0px 40px;
+      }
+
+      &_title {
+         font-size: 40px;
+      }
+
+
+   }
+
+   .case {
+      &_content {
+         padding: 50px 0px 0px 0px;
+
+      }
+
+      &_title {
+         font-size: 40px;
+         line-height: 50px;
+      }
+
+      &_block {
+         max-width: 502px;
+         min-height: 100px;
+         background: #FFFFFF;
+         padding: 20px 23px;
+         transform: translate(0px, -50px);
+      }
+   }
+
+   .transform {
+      &_big {}
+
+      &_little {
+         margin-bottom: -80px;
+         transform: translateY(-120px);
+      }
+
+      &_title {
+         font-size: 40px;
+         line-height: 51px;
+      }
+
+      &_block {
+         width: 390;
+         height: 200px;
+
+         gap: 40px;
+      }
+
+      &_subscribe {
+         line-height: 26px;
+         color: #3C3C3C;
+         transform: translateX(0);
+      }
+
+      &_form {
+         transform: translate(0px, -20px);
+
+         input {
+            width: 250px;
+            height: 56px;
+            background: rgb(39, 39, 39);
+            color: #FFFFFF;
+            border: none;
+         }
+
+         button {
+            width: 80px;
+            height: 58px;
+            transform: translate(-6px, 3px);
+         }
+      }
+   }
+
+   .meet {
+      h2 {
+         font-size: 40px;
+         line-height: 50px;
+      }
+   }
+
+   .appointment {
+      &_wrapper {
+         padding: 50px 20px;
+
+      }
+
+      &_schedule {
+         h2 {
+            font-size: 40px;
+            line-height: 50px;
+         }
+      }
+   }
+
+   .footer {
+      &_politicies {
+         flex-direction: column-reverse;
+         align-items: center;
+         gap: 20px;
+      }
+
+      &_seporator {
+         display: none;
+      }
+   }
+}
+
+// title 30px
+@media (max-width:424.98px) {
+   .header {
+      &_wrapper {
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         height: 120px;
+      }
+
+      &_logo {
+         width: 100%;
+      }
+
+      .hamburger {
+         right: 10px;
+         top: 30px;
+      }
+
+      &_act {
+         width: 100%;
+         justify-content: end;
+         margin-right: 10px;
+      }
+   }
+
+   .legal {
+      &_title {
+         font-size: 30px;
+      }
+   }
+
+   .leading {
+      &_wrapper {
+         flex-direction: column;
+         gap: 30px;
+         padding: 50px 0px 50px 0px;
+      }
+
+      &_content {
+         margin: 0px 20px;
+      }
+
+      &_title {
+         font-size: 30px;
+      }
+   }
+
+   .case {
+      &_content {
+         padding: 30px 0px 0px 0px;
+
+      }
+
+      &_title {
+         font-size: 30px;
+         line-height: 40px;
+      }
+
+      &_subtitle {
+         padding-left: 0;
+      }
+   }
+
+   .transform {
+      &_title {
+         font-size: 30px;
+         line-height: 40px;
+      }
+
+      &_little {
+         display: none;
+      }
+
+      &_block {
+         width: 290;
+         height: 170px;
+      }
+
+      &_form {
+         input {
+            width: 170px;
+         }
+
+         button {
+            width: 60px;
+         }
+
+      }
+
+      &_visual {
+         display: flex;
+      }
+
+      &_big {
+         margin: 20px auto;
+      }
+   }
+
+   .meet {
+      h2 {
+         font-size: 30px;
+         line-height: 40px;
+      }
+   }
+
+   .appointment {
+      &_wrapper {
+         padding: 50px 10px;
+
+      }
+
+      &_schedule {
+         h2 {
+            font-size: 30px;
+            line-height: 40px;
+         }
+      }
+   }
+}
